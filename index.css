@@ -21,6 +21,22 @@ h1 {
   font-size: 48px;
   font-weight: 800;
 }
+.section-header {
+  font-size: 10px;
+  color: #007BFF;
+  font-weight: 800;
+}
+button {
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  background-color: #007BFF;
+  color: #fff;
+  padding: 10px 20px;
+}
+
+
+
 /* Navigation Bar Styles */
 .navbar {
   margin: 20px 30px;
@@ -60,9 +76,9 @@ nav {
 }
 
 /* Main Content Styles */
-main {
+/* main {
   padding: 20px;
-}
+} */
 
 /* Hero section Style */
 .hero {
@@ -94,15 +110,292 @@ h1.hero-tagline {
   
 }
 .hero-signup_form button {
-  outline: none;
-  border: none;
-  background-color: #007BFF;
-  color: #fff;
   margin: auto;
-  padding: 10px 20px;
 }
 .hero-signup_form input {
   width: 200px;
   height: 30px;
 }
 
+
+/* Introduction section Styles */
+.introduction {
+  margin-block: 30px;
+}
+.introduction-points {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-inline: auto;
+  margin-block: 20px;
+  flex-wrap: wrap;
+  width: 50%;
+}
+.points {
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+  font-size: 10px;
+  font-weight: 600;
+  border: 1px solid #969493;
+  border-radius: 20px;
+  align-items: center;
+  padding: 8px 14px;
+  margin-inline: 10px
+}
+.check-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #007BFF;
+  font-size: 10px;
+  font-weight: 900;
+  height: 12px;
+  width: 12px;
+  -webkit-box-shadow: 0px 0px 3px -2px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 3px -2px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 3px -2px rgba(0,0,0,0.75);
+  border-radius: 50%;
+}
+
+/* About Section Style */
+.about {
+  margin-inline: 50px;
+  margin-block: 30px;
+}
+.about .section-header.advantage,
+.about h3 {
+  text-align: left;
+}
+.advantage-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.advantage-header h3 {
+  font-size: 36px;
+  font-weight: 600;
+  max-width: 400px;
+  margin-block: 10px;
+}
+
+.about-advantages {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.about-advantage {
+  padding: 30px;
+  text-align: left;
+  -webkit-box-shadow: 0px 0px 3px -2px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 3px -2px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 3px -2px rgba(0,0,0,0.75);
+  border-radius: 10px;
+}
+.about-advantages_icon {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  border: 1px solid #c1bfbf;
+  margin-block: 20px;
+}
+.about-advantage h4 {
+  font-weight: 800;
+  font-size: 15px;
+  margin-block: 0px;
+}
+.about-advantage p {
+  font-size: 13px;
+  color: #969493;
+}
+
+
+/* Features Section Style */
+.features {
+  padding: 50px 50px;
+  background-color: #f4f5f8;
+}
+.features-header {
+  font-size: 42px;
+  font-weight: 600;
+  margin-block: 10px 30px
+}
+.features-list {
+  display: grid;
+  column-gap: 5px;
+  row-gap: 5px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 1fr;
+}
+.features-list_icon {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  border: 1px solid #c1bfbf;
+  margin-block: 20px;
+  margin-inline: auto;
+}
+.features-list_item {
+  background-color: #fff;
+  text-align: center;
+  -webkit-box-shadow: 0px 0px 3px -2px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 3px -2px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 3px -2px rgba(0,0,0,0.75);
+  height: 100%;
+}
+.features-list_item > div {
+  padding: 10px 50px;
+}
+.features-list_item h4 {
+  margin-block: 10px;
+  font-size: 18px;
+  font-weight: 800;
+}
+.features-list_item p {
+  font-size: 14px;
+  font-weight: 500;
+  color: #969493;
+  margin-block: 5px;
+}
+
+
+/* How to use Section Styles */
+.how-to-use {
+  margin: 30px 50px;
+}
+.how-to-use h3{
+  font-size: 36px;
+  font-weight: 700;
+}
+.use {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 1fr;
+  gap: 70px;
+}
+.one, .two, .three, .four {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 28px;
+  font-weight: 500;
+  margin: auto;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+.one {
+  background-color: red;
+}
+.two {
+  background-color: green;
+}
+.three {
+  background-color: blue;
+}
+.four {
+  background-color: orange;
+}
+.use > div > h5 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-block: 20px;
+}
+.use > div .use-article {
+  color: #969493;
+  font-size: 14px;
+  font-weight: 400;
+  margin-block: 10px;
+}
+
+
+/* Ready Section Styles */
+.ready {
+  background-color: #000;
+  color: #fff;
+  padding-block: 50px;
+}
+.ready h4 {
+  font-size: 36px;
+  font-weight: 500;
+  margin-block: 30px;
+}
+
+/* Footer Section Styles */
+footer {
+  height: 100px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+
+}
+.footer-copyright {
+  position:absolute;
+  bottom: 10px;
+  height: 30px;
+  border-top: 1px solid #969493;
+  width: 80%;
+  margin-inline: auto;
+}
+.footer-copyright p {
+  font-size: 14px;
+  color: #969493;
+  margin: 10px;
+}
+
+
+
+
+
+/* .feature-section {
+  margin-bottom: 20px;
+}
+.feature-section h2 {
+  color: #333;
+}
+.feature-section p {
+  color: #666;
+} */
+
+/* Responsive Main Content */
+@media (max-width: 768px) {
+  .feature-section {
+    text-align: center;
+  }
+}
+
+/* Additional styles for buttons, input fields, etc. */
+.button {
+  background-color: #007BFF;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.button:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive Button */
+@media (max-width: 768px) {
+  .button {
+    width: 100%;
+  }
+}
+
+/* Animations */
+.feature-section {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1s forwards;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
