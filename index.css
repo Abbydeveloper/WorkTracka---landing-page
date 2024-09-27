@@ -1,0 +1,108 @@
+/* CSS Reset */
+body { 
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+}
+
+/* Custom Styles */
+
+.link-btn {
+  font-size: 12px;
+  font-weight: 500;
+  color: #fff;
+  background-color: #007BFF;
+  padding: 12px 14px;
+  border-radius: 7px;
+}
+h1 {
+  font-size: 48px;
+  font-weight: 800;
+}
+/* Navigation Bar Styles */
+.navbar {
+  margin: 20px 30px;
+}
+nav {
+  background-color: #ffffff;
+  -webkit-box-shadow: 0px 0px 3px -2px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 3px -2px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 3px -2px rgba(0,0,0,0.75);
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  font-size: 24px;
+  font-weight: 600;
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+.nav-links li {
+  text-decoration: none;
+  display: inline;
+}
+.nav-links a {
+  text-decoration: none;
+}
+
+/* Responsive Navigation */
+@media (max-width: 768px) {
+  .nav-links {
+    flex-direction: column;
+  }
+}
+
+/* Main Content Styles */
+main {
+  padding: 20px;
+}
+
+/* Hero section Style */
+.hero {
+  width: 70%;
+  margin: auto;
+  line-height: 1.3;
+}
+.hero > * {
+  margin-inline: auto;
+}
+h1.hero-tagline {
+  margin: 0.4em;
+}
+.hero-text {
+  color: #969493;
+  font-size: 16px;
+  width: 70%;
+}
+.hero-signup_form {
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 5px 10px 20px;
+  width: max-content;
+  background-color: #fff;
+  background-color: grey;
+  border-radius: 5px;
+  
+}
+.hero-signup_form button {
+  outline: none;
+  border: none;
+  background-color: #007BFF;
+  color: #fff;
+  margin: auto;
+  padding: 10px 20px;
+}
+.hero-signup_form input {
+  width: 200px;
+  height: 30px;
+}
+
